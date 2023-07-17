@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Holago</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="build/css/demo.css">
+    <link rel="stylesheet" href="build/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- main -->
+    <main class="main">
+        <a href="index.html" title="Go Back" class="auth-page-close">
+            <i class="fa fa-xmark"></i>
+        </a>
+        <div class="auth">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="auth__content">
+                            <div class="auth__wrapper">
+                                <!-- login form -->
+                                <div class="login__form" id="login__form">
+                                    <!-- form -->
+                                    <form action="" id="login__stepForm">
+                                        <h2 class="form__title" > <span id="login__back"><i
+                                                    class="fa fa-long-arrow-left" title="back"></i></span> Login</h2>
+                                        <!-- step one -->
+                                        <div class="stepOne_login">
+                                            <p class="inner__title">Use Phone Number</p>
+                                            <div class="form__input_inner">
+                                                <input type="text" id="phone">
+                                            </div>
+                                            <div class="remember">
+                                                <input type="checkbox" class="form-check-input" id="remeber">
+                                                <label for="remeber">Remember Me</label>
+                                            </div>
+                                        </div>
+                                        <!-- step one -->
+                                        <div class="stepTwo_login">
+
+                                            <ul class="nav nav-tabs">
+
+                                                <li class="nav-item">
+                                                    <button class="inner__title nav-link active" data-bs-toggle="tab"
+                                                        data-bs-target="#home-tab-pane" type="button">Use
+                                                        Password</button>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <button class="inner__title nav-link" data-bs-toggle="tab"
+                                                        data-bs-target="#profile-tab-pane" type="button">Use
+                                                        OTP</button>
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="home-tab-pane">
+                                                    <div class="form__input_inner">
+                                                        <input type="password" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="profile-tab-pane">
+                                                    <div class="form__input_inner">
+                                                        <input type="password" placeholder="SMS Password">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- button -->
+                                        <div class="submit__button">
+                                            <button type="submit" title="back">Continue <i class="fa fa-long-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <!-- anchor tag -->
+                                    <h5 class="d-flex align-items-center"><span id="notAmember">Not a member yet?
+                                            &nbsp;</span><a id="register__btn_link">Register Now</a></h5>
+                                    <a id="forgot__btn_link">Forgot Me</a>
+                                </div>
+                                <!-- registration form -->
+                                <div class="registar__form" id="registar__form">
+                                    <!-- form -->
+                                    <form action="">
+                                        <h2 class="form__title">Register</h2>
+                                        <div class="form__input_inner">
+                                            <input type="text" id="mobile">
+                                        </div>
+                                        <!-- button -->
+                                        <div class="submit__button">
+                                            <button type="submit">Continue <i class="fa fa-long-arrow-right"></i>
+                                        </div>
+                                    </form>
+                                    <!-- anchor tag -->
+                                    <h5><span>Already a member?</span><a id="login__btn_link"> Login Now</a></h5>
+                                </div>
+                                <!-- forgot form -->
+                                <div class="forgot__form" id="forgot__form">
+                                    <!-- form -->
+                                    <form action="">
+                                        <h2 class="form__title" title="back"> <span id="reset__back"><i
+                                                    class="fa fa-long-arrow-left"></i></span> Reset Password</h2>
+                                        <p class="inner__title">Use Phone Number</p>
+                                        <div class="form__input_inner">
+                                            <input type="text" id="phone">
+                                        </div>
+                                        <!-- button -->
+                                        <div class="submit__button">
+                                            <button type="submit">Continue <i class="fa fa-long-arrow-right"></i>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!--  main -->
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+    <script src="build/js/intlTelInput.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- number flags -->
+    <script>
+
+        // login
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            utilsScript: "build/js/utils.js",
+        });
+
+        // register
+        var input = document.querySelector("#mobile");
+        window.intlTelInput(input, {
+            utilsScript: "build/js/utils.js",
+        });
+
+
+        <!-- login register form -->
+        const selectForm = {
+            loginForm: document.getElementById("login__form"),
+            registarForm: document.getElementById("registar__form"),
+            forgotForm: document.getElementById("forgot__form"),
+            registerBtn: document.getElementById("register__btn_link"),
+            loginBtn: document.getElementById("login__btn_link"),
+            forgotBtn: document.getElementById("forgot__btn_link"),
+            loginStepForm: document.getElementById("login__stepForm"),
+            loginBack: document.getElementById("login__back"),
+            resetBack: document.getElementById("reset__back"),
+            stepOnelogin: document.querySelector(".stepOne_login"),
+            stepTwologin: document.querySelector(".stepTwo_login"),
+            notAmember: document.querySelector("#notAmember")
+        }
+
+        const { resetBack, loginForm, registarForm, forgotForm, registerBtn, loginBtn, forgotBtn, loginStepForm, stepOnelogin, stepTwologin, loginBack } = selectForm
+
+        registerBtn.addEventListener("click", () => {
+            loginForm.style.display = "none"
+            registarForm.style.display = "block"
+            forgotForm.style.display = "none"
+        })
+
+        loginBtn.addEventListener("click", () => {
+            loginForm.style.display = "block"
+            registarForm.style.display = "none"
+            forgotForm.style.display = "none"
+        })
+
+        forgotBtn.addEventListener("click", () => {
+            loginForm.style.display = "none"
+            registarForm.style.display = "none"
+            forgotForm.style.display = "block"
+        })
+
+        resetBack.addEventListener("click", () => {
+            loginForm.style.display = "block"
+            registarForm.style.display = "none"
+            forgotForm.style.display = "none"
+        })
+
+        loginStepForm.addEventListener("submit", (e) => {
+            e.preventDefault()
+            stepTwologin.style.display = "block"
+            stepOnelogin.style.display = "none"
+            registerBtn.style.display = "none"
+            forgotBtn.style.display = "block"
+            loginBack.style.display = "block"
+            notAmember.style.display = "none"
+        })
+
+        loginBack.addEventListener("click", function () {
+            stepTwologin.style.display = "none";
+            stepOnelogin.style.display = "block";
+            registerBtn.style.display = "block";
+            forgotBtn.style.display = "none";
+            this.style.display = "none";
+        });
+
+    </script>
+
+</html>

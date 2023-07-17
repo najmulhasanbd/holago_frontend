@@ -1,0 +1,1396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Holago</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <div class="h_header">
+            <div class="header-top d-flex">
+                <div class="h_header-left d-flex align-items-center position-relative">
+                    <div class="h_logo">
+                        <a href="index.html">
+                            <img src="img/holago.svg" alt="">
+                        </a>
+                    </div>
+                    <div id="main_navigation">
+                        <a href="">
+                            MENS
+                        </a>
+                    </div>
+                </div>
+                <div class="h_header-middle position-relative">
+                    <form action="" method="get">
+                        <div class="form-group d-flex align-items-center" id="search__header">
+                            <input type="search" name="search" class="w-100" placeholder="What are you lookin for?">
+                            <i class="fa fa-magnifying-glass"></i>
+
+                        </div>
+                        <div id="myDIV">
+                            <div class="search-bottom">
+                                <ul class="single-search">
+                                    <h6>recent</h6>
+                                    <li><a href="#">dresses</a></li>
+                                </ul>
+                                <span></span>
+                                <ul class="single-search">
+                                    <h6>TRENDING</h6>
+                                    <li><a href="#">DRESSES</a></li>
+                                    <li><a href="#">COATS & JACKETS</a></li>
+                                    <li><a href="#">JUMPSUITS</a></li>
+                                    <li><a href="#">JEANS</a></li>
+                                    <li><a href="#">SPRING</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- <ul class="advance-search position-absolute">
+                            <h6>categories</h6>
+                            <li><a href="#">disco pants in <span>trousers<i class="fa fa-angle-right"></i></span></a></li>
+                            <li><a href="#">disco pants in <span>trousers<i class="fa fa-angle-right"></i></span></a></li>
+                            <li><a href="#">disco pants in <span>trousers<i class="fa fa-angle-right"></i></span></a></li>
+                        </ul> -->
+
+                    </form>
+                </div>
+                <div class="h_header-right d-flex align-items-center justify-content-end">
+                    <a href="auth.html" class="h_header-action-item h_account">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <a href="wishlist.html" class="h_header-action-item h_wishlist d-flex align-items-center">
+                        <i class="fa fa-heart"></i>
+                        <span>10</span>
+                    </a>
+                    <div class="h_header-action-item h_minicart d-flex align-items-center" data-bs-toggle="offcanvas"
+                        href="#cardModal" role="button" aria-controls="offcanvasExample">
+                        <i class="fa fa-cart-shopping"></i>
+                        <span>10</span>
+                    </div>
+                </div>
+
+                <div class="h_header-right d-flex align-items-center justify-content-end">
+                    <div class="language">
+                        <select name="" id="">
+                            <option value="">Bangla</option>
+                            <option value="">Bangla</option>
+                            <option value="">Bangla</option>
+                            <option value="">Bangla</option>
+                            <option value="">Bangla</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- search box for mobile -->
+                <!-- <ul class="advance-search advance-mobile-search d-none">
+                    <h6>categories</h6>
+                    <li><a href="#">disco pants in <span>trousers<i class="fa fa-angle-right"></i></span></a></li>
+                    <li><a href="#">disco pants in <span>trousers<i class="fa fa-angle-right"></i></span></a></li>
+                    <li><a href="#">disco pants in <span>trousers<i class="fa fa-angle-right"></i></span></a></li>
+                </ul> -->
+
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <header class="header mobile-header d-none header-sticky">
+            <div class="container">
+                <div class="header-main">
+                    <div class="open-nav-menu">
+                        <span></span>
+                    </div>
+                    <div class="menu-overlay">
+                    </div>
+                    <!-- navigation menu start -->
+                    <nav class="nav-menu">
+                        <div class="close-nav-menu">
+                            <img src="img/close.svg" alt="close">
+                        </div>
+
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="category-tab" data-bs-toggle="pill"
+                                    data-bs-target="#category-pane" type="button" role="tab"
+                                    aria-controls="category-pane" aria-selected="true">CATEGORIES</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="menu-tab" data-bs-toggle="pill" data-bs-target="#menu-pane"
+                                    type="button" role="tab" aria-controls="menu-pane"
+                                    aria-selected="false">MENU</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="category-pane" role="tabpanel"
+                                aria-labelledby="category-tab" tabindex="0">
+                                <ul class="menu">
+                                    <li class="menu-item">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" data-toggle="sub-menu">men <i class="plus"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">Home 1</a></li>
+                                            <li class="menu-item"><a href="#">t-shirts</a></li>
+                                            <li class="menu-item"><a href="#">cuban shirt</a></li>
+                                            <li class="menu-item"><a href="#">polos</a></li>
+                                            <li class="menu-item"><a href="#">men</a></li>
+                                            <li class="menu-item"><a href="#">t-shirts</a></li>
+                                            <li class="menu-item"><a href="#">cuban shirt</a></li>
+                                            <li class="menu-item"><a href="#">polos</a></li>
+                                            <li class="menu-item"><a href="#">men</a></li>
+                                            <li class="menu-item"><a href="#">t-shirts</a></li>
+                                            <li class="menu-item"><a href="#">cuban shirt</a></li>
+                                            <li class="menu-item"><a href="#">polos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" data-toggle="sub-menu">men <i class="plus"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">Home 1</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" data-toggle="sub-menu">t-shirts <i class="plus"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">Home 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" data-toggle="sub-menu">cuban shirt <i class="plus"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">Home 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" data-toggle="sub-menu">polos <i class="plus"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">Home 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" data-toggle="sub-menu">men <i class="plus"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">Home 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" data-toggle="sub-menu">men <i class="plus"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">Home 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" data-toggle="sub-menu">men <i class="plus"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">Home 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" data-toggle="sub-menu">Offers <i class="plus"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="#">30% Off Menswear!*</a></li>
+                                            <li class="menu-item"><a href="#">Next Day Delivery!** Use Code: YESYE</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="menu-pane" role="tabpanel" aria-labelledby="menu-tab"
+                                tabindex="0">
+
+                                <ul class="sidebar-mobile-menu">
+                                    <li><a href="shop.html">shop</a></li>
+                                    <li><a href="club.html">HOLAGO Club</a></li>
+                                    <li><a href="wishlist.html"> <i class="fa fa-heart"></i> wishlist</a></li>
+                                    <li><a href="auth.html"> <i class="fa fa-user"></i> login/register</a></li>
+                                </ul>
+                                <ul class="sidebar-mobile-menu">
+                                    <div class="language">
+                                        <select name="" id="">
+                                            <option value="">Bangla</option>
+                                            <option value="">Bangla</option>
+                                            <option value="">Bangla</option>
+                                            <option value="">Bangla</option>
+                                            <option value="">Bangla</option>
+                                        </select>
+                                    </div>
+                                </ul>
+                                <ul class="sidebar-mobile-menu">
+                                    <span>need help?</span>
+                                    <li class="border-0"><a href="tel:+8801999999999"><i class="fa fa-phone"></i>
+                                            01999999999</a></li>
+                                    <li><a href="mailto:info@holago.com.bd"><i class="fa fa-envelope"></i>
+                                            info@holago.com.bd</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+                    </nav>
+                    <!-- navigation menu end -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/holago.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="mobile-header-search" data-bs-toggle="offcanvas" href="#mobile_header_search"
+                        role="button" aria-controls="offcanvasExample">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- mobile header search -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile_header_search" aria-labelledby="search-bar">
+            <div class="offcanvas-header">
+                <h6 class="offcanvas-title" id="search-bar">SEARCH OUR SITE</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body mobile-search">
+                <form action="">
+                    <div class="form-group">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group site-product-search">
+                        <input type="search" class="form-control" placeholder="search for products">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <span>Search Results</span>
+                </form>
+                <div class="product-search-result">
+                    <div class="single-cart-product d-flex">
+                        <div class="sigle-cart-product-photo">
+                            <a href="#">
+                                <img src="img/siam.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="sigle-cart-product-content">
+                            <div class="cart-product-name ">
+                                <div>
+                                    <a href="#">Holago Discreet Delight Polo - S</a>
+                                </div>
+                                <span>1000.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-cart-product d-flex">
+                        <div class="sigle-cart-product-photo">
+                            <a href="#">
+                                <img src="img/siam.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="sigle-cart-product-content">
+                            <div class="cart-product-name ">
+                                <div>
+                                    <a href="#">Holago Discreet Delight Polo - S</a>
+                                </div>
+                                <span>1000.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-cart-product d-flex">
+                        <div class="sigle-cart-product-photo">
+                            <a href="#">
+                                <img src="img/siam.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="sigle-cart-product-content">
+                            <div class="cart-product-name ">
+                                <div>
+                                    <a href="#">Holago Discreet Delight Polo - S</a>
+                                </div>
+                                <span>1000.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-cart-product d-flex">
+                        <div class="sigle-cart-product-photo">
+                            <a href="#">
+                                <img src="img/siam.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="sigle-cart-product-content">
+                            <div class="cart-product-name ">
+                                <div>
+                                    <a href="#">Holago Discreet Delight Polo - S</a>
+                                </div>
+                                <span>1000.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-cart-product d-flex">
+                        <div class="sigle-cart-product-photo">
+                            <a href="#">
+                                <img src="img/siam.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="sigle-cart-product-content">
+                            <div class="cart-product-name ">
+                                <div>
+                                    <a href="#">Holago Discreet Delight Polo - S</a>
+                                </div>
+                                <span>1000.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer mobile-search-footer">
+                <a href="shop.html">View All(100) <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="header-bottom header-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul
+                            class="header-bottom-menu d-flex pl-100 pr-100 justify-content-center position-relative mb-0">
+                            <li><a href="#">men</a>
+                                <div class="submenu position-absolute w-100">
+                                    <div class="row">
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>ALL shirt</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2 bg-white">
+                                            <ul class="submenu-item submenu-offer-item p-2">
+                                                <h6>OFFERS</h6>
+                                                <li><a href="#">30% Off Menswear!*</a></li>
+                                                <li><a href="#">Next Day Delivery!** Use Code:
+                                                        YESYE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span><a href="shop.html" class="text-white bg-black lh-1">NEW LINES ADDED
+                                            DAILY!</a></span>
+                                </div>
+                            </li>
+                            <li><a href="#">t-shirts</a>
+                                <div class="submenu position-absolute w-100">
+                                    <div class="row">
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2 bg-white">
+                                            <ul class="submenu-item submenu-offer-item p-2">
+                                                <h6>OFFERS</h6>
+                                                <li><a href="#">30% Off Menswear!*</a></li>
+                                                <li><a href="#">Next Day Delivery!** Use Code:
+                                                        YESYE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span><a href="shop.html" class="text-white bg-black lh-1">NEW LINES ADDED
+                                            DAILY!</a></span>
+                                </div>
+                            </li>
+                            <li><a href="#">cuban shirt</a>
+                                <div class="submenu position-absolute w-100">
+                                    <div class="row">
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>ALL pants</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2 bg-white">
+                                            <ul class="submenu-item submenu-offer-item p-2">
+                                                <h6>OFFERS</h6>
+                                                <li><a href="#">30% Off Menswear!*</a></li>
+                                                <li><a href="#">Next Day Delivery!** Use Code:
+                                                        YESYE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span><a href="shop.html" class="text-white bg-black lh-1">NEW LINES ADDED
+                                            DAILY!</a></span>
+                                </div>
+                            </li>
+                            <li><a href="#">polos</a>
+                                <div class="submenu position-absolute w-100">
+                                    <div class="row">
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>ALL CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2 bg-white">
+                                            <ul class="submenu-item submenu-offer-item p-2">
+                                                <h6>OFFERS</h6>
+                                                <li><a href="#">30% Off Menswear!*</a></li>
+                                                <li><a href="#">Next Day Delivery!** Use Code:
+                                                        YESYE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span><a href="shop.html" class="text-white bg-black lh-1">NEW LINES ADDED
+                                            DAILY!</a></span>
+                                </div>
+                            </li>
+                            <li><a href="#">men</a>
+                                <div class="submenu position-absolute w-100">
+                                    <div class="row">
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>ALL CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2 bg-white">
+                                            <ul class="submenu-item submenu-offer-item p-2">
+                                                <h6>OFFERS</h6>
+                                                <li><a href="#">30% Off Menswear!*</a></li>
+                                                <li><a href="#">Next Day Delivery!** Use Code:
+                                                        YESYE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span><a href="shop.html" class="text-white bg-black lh-1">NEW LINES ADDED
+                                            DAILY!</a></span>
+                                </div>
+                            </li>
+                            <li><a href="#">t-shirts</a>
+                                <div class="submenu position-absolute w-100">
+                                    <div class="row">
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>ALL CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2 bg-white">
+                                            <ul class="submenu-item submenu-offer-item p-2">
+                                                <h6>OFFERS</h6>
+                                                <li><a href="#">30% Off Menswear!*</a></li>
+                                                <li><a href="#">Next Day Delivery!** Use Code:
+                                                        YESYE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span><a href="shop.html" class="text-white bg-black lh-1">NEW LINES ADDED
+                                            DAILY!</a></span>
+                                </div>
+                            </li>
+                            <li><a href="#">cuban shirt</a>
+                                <div class="submenu position-absolute w-100">
+                                    <div class="row">
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>ALL CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2 bg-white">
+                                            <ul class="submenu-item submenu-offer-item p-2">
+                                                <h6>OFFERS</h6>
+                                                <li><a href="#">30% Off Menswear!*</a></li>
+                                                <li><a href="#">Next Day Delivery!** Use Code:
+                                                        YESYE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span><a href="shop.html" class="text-white bg-black lh-1">NEW LINES ADDED
+                                            DAILY!</a></span>
+                                </div>
+                            </li>
+                            <li><a href="#">polos</a>
+                                <div class="submenu position-absolute w-100">
+                                    <div class="row">
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>ALL CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2 bg-white">
+                                            <ul class="submenu-item submenu-offer-item p-2">
+                                                <h6>OFFERS</h6>
+                                                <li><a href="#">30% Off Menswear!*</a></li>
+                                                <li><a href="#">Next Day Delivery!** Use Code:
+                                                        YESYE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span><a href="shop.html" class="text-white bg-black lh-1">NEW LINES ADDED
+                                            DAILY!</a></span>
+                                </div>
+                            </li>
+                            <li><a href="#">men</a>
+                                <div class="submenu position-absolute w-100">
+                                    <div class="row">
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>ALL CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2 bg-white">
+                                            <ul class="submenu-item submenu-offer-item p-2">
+                                                <h6>OFFERS</h6>
+                                                <li><a href="#">30% Off Menswear!*</a></li>
+                                                <li><a href="#">Next Day Delivery!** Use Code:
+                                                        YESYE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span><a href="shop.html" class="text-white bg-black lh-1">NEW LINES ADDED
+                                            DAILY!</a></span>
+                                </div>
+                            </li>
+                            <li><a href="#">t-shirts</a>
+                                <div class="submenu position-absolute w-100">
+                                    <div class="row">
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>ALL CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2 bg-white">
+                                            <ul class="submenu-item submenu-offer-item p-2">
+                                                <h6>OFFERS</h6>
+                                                <li><a href="#">30% Off Menswear!*</a></li>
+                                                <li><a href="#">Next Day Delivery!** Use Code:
+                                                        YESYE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span><a href="shop.html" class="text-white bg-black lh-1">NEW LINES ADDED
+                                            DAILY!</a></span>
+                                </div>
+                            </li>
+                            <li><a href="#">cuban shirt</a>
+                                <div class="submenu position-absolute w-100">
+                                    <div class="row">
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>ALL CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2 bg-white">
+                                            <ul class="submenu-item submenu-offer-item p-2">
+                                                <h6>OFFERS</h6>
+                                                <li><a href="#">30% Off Menswear!*</a></li>
+                                                <li><a href="#">Next Day Delivery!** Use Code:
+                                                        YESYE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span><a href="shop.html" class="text-white bg-black lh-1">NEW LINES ADDED
+                                            DAILY!</a></span>
+                                </div>
+                            </li>
+                            <li><a href="#">polos</a>
+                                <div class="submenu position-absolute w-100">
+                                    <div class="row">
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                                            <ul class="submenu-item p-3">
+                                                <h6>ALL CLOTHING</h6>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                                <li><a href="#">men</a></li>
+                                                <li><a href="#">t-shirts</a></li>
+                                                <li><a href="#">cuban shirt</a></li>
+                                                <li><a href="#">polos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xxl-2 col-xl-2 col-lg-2 bg-white">
+                                            <ul class="submenu-item submenu-offer-item p-2">
+                                                <h6>OFFERS</h6>
+                                                <li><a href="#">30% Off Menswear!*</a></li>
+                                                <li><a href="#">Next Day Delivery!** Use Code:
+                                                        YESYE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span><a href="shop.html" class="text-white bg-black lh-1">NEW LINES ADDED
+                                            DAILY!</a></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main class="main">
+
+        <!-- refund start -->
+        <div class="refund-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="refund-content">
+                            <p>We value the trust customers have on us. Therefore, we have a very fast and simple return
+                                and refunds policy. Once you put your trust in us you can be rest assured you will get
+                                the service you have paid for. Our products go through rigorous quality checks, but in
+                                the unlikely event where you have to return and receive a replacement/ refund we will
+                                follow these policies below.</p>
+
+                            <p>We encourage our customers to check the item as soon as it is delivered. Please contact
+                                us within the applicable return window <strong> (3 days from the received delivery date)
+                                    .</strong> Your product may be eligible for replacement or return depending on the
+                                <strong>condition</strong> of the product.
+                            </p>
+
+                            <ul class="single-refund">
+                                <strong>VALID CONDITIONS AND REASONS TO RETURN AN ITEM (General):</strong>
+                                <li>Delivered product is damaged on arrival (at the time of delivery)</li>
+                                <li>Delivered product is defective or Faulty</li>
+                                <li>Delivered products has missing parts</li>
+                                <li>Delivered product is wrong (not the same as displayed on website or on Order
+                                    Confirmation)</li>
+                                <li>Delivered product is of wrong size. (Delivery charge needs to be paid again)</li>
+                            </ul>
+
+                            <ul class="single-refund">
+                                <strong>REQUIREMENT FOR A VALID RETURN`AND REPLACE:</strong>
+                                <li>Proof of purchase (Confirmation Email, order number, invoice, etc.)</li>
+                                <li>Reason for return has to be valid as mentioned above with proof </li>
+                            </ul>
+
+                            <ul class="single-refund">
+                                <strong>REQUIREMENT FOR A VALID RETURN`AND REFUND:</strong>
+                                <li>Refund on returned product is only available <strong class="p-0 d-inline-block">due
+                                        to product
+                                        unavailability</strong> of the same product that was initially ordered by the
+                                    customer.</li>
+                                <li>Proof of purchase (Confirmation Email, order number, invoice, etc.)</li>
+                                <li>Reason for return has to be valid as mentioned above with proof .</li>
+                            </ul>
+
+                            <strong><i>Please Note: Holago will provide a free replacement, provided that all conditions
+                                    for Return and Replace are met. </i></strong> <br>
+                            <strong><i>Please Note: If the claim for Return and Replace, Return and Refund must be made
+                                    within 3 days of Delivery. </i></strong> <br>
+                            <strong style="color: #707070;display: block;padding: 10px 0;">Eligibility for Return and
+                                Replace or Return and Refunds</strong>
+                            <p>You are eligible for return and replace/ refund as long as all the requirements for it
+                                are met.</p>
+                            <p>Requests for a return and replacement/ refund must be made <strong>within 3 days of the
+                                    received delivery date.</strong> (E.g. if you receive your product on the 7th Day of
+                                the month, the request has to be made by the end of 10th Day of the month).</p>
+                            <strong><i>Please Note: Holago will provide a free replacement at no extra charges, provided
+                                    the exact item is available and only in the case if the product is damaged. If the
+                                    same item is not available, a refund will be issued to your preferred account in 7
+                                    days.</i></strong> <br>
+                            <strong style="color: #707070;display: block;padding: 15px 0;">RETURN & REPLACEMENT MAY NOT
+                                APPLY IN THESE CONDITIONS:</strong>
+                            <p>When Holago receives a returned item, it will go through a check to
+                                <strong>verify</strong> that none of the conditions mentioned below apply. <strong>A
+                                    refund will be issued</strong> as soon as Holago has verified the returned item.
+                                Please find the conditions below:
+                            </p>
+
+                            <ul class="single-refund">
+                                <li>Damages due to misuse of the product</li>
+                                <li>Incidental damage due to malfunctioning of product</li>
+                                <li>Products with tampered or missing serial / UPC numbers</li>
+                                <li>Any damage/defect which is not covered under the manufacturer’s warranty</li>
+                                <li>Any product that is returned without all original packaging and accessories,
+                                    including the box, manufacturer’s packaging if any, and all other items originally
+                                    included with the product(s) delivered.</li>
+                            </ul>
+
+                            <strong style="color: #707070; padding: 15px 0;display: block;">Claiming Refunds</strong>
+
+                            <p>If your product is eligible for a refund, you can choose your preferred refund method
+                                based on the table below. The <strong>shipping fee is refunded</strong> along with the
+                                amount paid for
+                                your returned product.</p>
+                            <p>The time required to complete a refund depends on the refund method you have selected.
+                                Once we have validated and verified the product being returned, the expected refund
+                                processing times are as follows:</p>
+
+
+
+                            <table class="table table-striped table-bordered table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Payment Method</th>
+                                        <th scope="col">Refund Option</th>
+                                        <th scope="col">Refund Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="refund-table">
+                                    <tr>
+                                        <td>All</td>
+                                        <td>
+                                            <ul>
+                                                <li>Holago Gift Voucher</li>
+                                                <li>Holago Voucher Discount Code</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>Within 24 hours you will have Holago store credit (Insured Products)
+                                                </li>
+                                                <li>Within 24 hours you will receive a Discount Code.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Debit or Credit Card</td>
+                                        <td>
+                                            <ul>
+                                                <li>Debit or Credit Card</li>
+                                                <li>Payment Reversal</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li> 9-10 working days</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>bKash</td>
+                                        <td>
+                                            <ul>
+                                                <li>Bank Deposit / Mobile Payment</li>
+                                                <li> Payment Reversal</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>7 working days</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cash on Delivery (COD)</td>
+                                        <td>
+                                            <ul>
+                                                <li>Bank Deposit</li>
+                                                <li>Mobile Payment</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>7 working days</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+
+                            <strong><i>Please Note: Holago Voucher Discount Code can only be applied once. The leftover
+                                    amount will not be refunded or used for the next purchase even if the value of order
+                                    is smaller than that of voucher value.</i></strong>
+
+                            <h2>Warranty Policy</h2>
+                            <h3>How do I know if my product has a warranty?</h3>
+
+                            <p>If a warranty is offered on a product, the <strong>warranty period will be displayed in
+                                    the ‘Description’ section on the product page.</strong> You can find it at the
+                                bottom of the product description in <strong>bold.</strong></p>
+
+                            <h4>Types of Warranties:</h4>
+                            <p><strong>Brand Warranty:</strong> This limited warranty will apply to all products that
+                                have the <strong>manufacturer’s warranty.</strong> For product defects under normal use
+                                circumstances and at the discretion of the company, Brand will provide free of charge
+                                repair and/or replacement services within the warranty period. </p>
+
+
+                            <ul class="single-refund">
+                                <li><strong>How do I claim my warranty?</strong></li>
+                                <li>If it has been less than <strong style="display: inline-block; padding: 0;">7 days
+                                        since delivery:</strong></li>
+                            </ul>
+
+                            <p>You may be able to return your product without using a warranty. Contact our customer
+                                services to lodge a return request. See our Return and Refunds policy for detailed
+                                information. (link to R and R policy here)</p>
+
+                            <ul class="single-refund">
+                                <li>If it has been more than<strong style="display: inline-block; padding: 0;"> 7 days
+                                        since delivery and the product has a
+                                        warranty:</strong></li>
+                            </ul>
+
+                            <p>Unfortunately, Holago will be unable to help you further with the delivered item.
+                                Customer has to take responsibility to repair the item.</p>
+
+                            <strong><i>Please Note: Violations against warranty, including but not limited to customer
+                                    induced damage, such as self-repairs, broken display, bending, scratch, dent, burn,
+                                    soaked or liquid damage, root or manual update, failure to comply with product
+                                    manual, and so on.</i></strong> <br> <br>
+
+                            <strong style="color: #707070;">Cancellation Policy & Refund Due to Product
+                                Unavailability</strong>
+
+                            <ul class="single-refund">
+                                <li>Holago understands its customers and we know that mistakes can happen while placing
+                                    an order. That is why Holago is giving its customers a <strong
+                                        style="display: inline-block; padding: 0;">cancellation
+                                        period</strong> in which any customer can cancel their order until confirmed by
+                                    our customer service team. There are no cancellation charges, if the customer has
+                                    already made an advance payment against the order, the customer will <strong
+                                        style="display: inline-block; padding: 0;">receive
+                                        a full refund of the advance payment within 24 hours.</strong></li>
+
+                                <li>Holago also expects its customers to understand that in some unlikely situations we
+                                    are not able to deliver the ordered product due to <strong
+                                        style="display: inline-block;padding: 0;">product unavailability or
+                                        unforeseen circumstances.</strong> In this event, we will proactively notify the
+                                    customer beforehand and <strong
+                                        style="display: inline-block;padding: 0;">communicate</strong> with the
+                                    customers until the
+                                    customer has received their replacement or full refund. </li>
+
+                                <li>Holago takes delivery time promises very seriously. So, if we have a change in
+                                    delivery time, we will <strong style="display: inline-block;padding: 0;">proactively
+                                        notify you in advance.</strong> Customers
+                                    will have the <strong style="display: inline-block;padding: 0;">option to
+                                        cancel</strong> the delivery and the full amount
+                                    will be refunded to the customer’s preferred account <strong
+                                        style="display: inline-block;padding: 0;">within 24
+                                        hours.</strong></li>
+
+                                <li>Advance payment is required for the delivery in some locations and <products
+                                        class="stro"> We may cancel any order if the advance payment is not made by the
+                                        customer for such orders.</products>
+                                </li>
+
+                                <li>Please bear in mind that Holago reserves the right to cancel orders at any given
+                                    time due to circumstances beyond our control.</li>
+                            </ul>
+
+                            <h4><strong><i>Please Note: Orders can be cancelled until it is confirmed by the
+                                        confirmation call. Once the item is processed, we are unable to cancel the order
+                                        as it is already out for delivery.</i></strong></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- refund end -->
+
+    </main>
+     <!-- main -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer-area pt-5 pb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="footer-widget">
+                            <a href="index.html">
+                                <img src="img/holago.svg" alt="">
+                            </a>
+                            <ul class="footer-address">
+                                <li class="d-flex align-items-center">
+                                    <div class="footer-left-item">
+                                        <div class="footer-item">
+                                            Trade License
+                                        </div>
+                                    </div>
+                                    <p> : 186045</p>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="footer-left-item">
+                                        <div class="footer-item">
+                                            Email </div>
+                                    </div>
+                                    <a href="mailto:info@holago.com.bd"> : info@holago.com.bd</a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="footer-left-item">
+                                        <div class="footer-item">
+                                            Registered Office </div>
+                                    </div>
+                                    <p> : Plot 30, Zahed Plaza (3rd Floor), Gulshan 2 , Dhaka-1212</p>
+                                </li>
+                                <li class="d-flex align-items-center mt-2">
+                                    <div class="footer-left-item">
+                                        <div class="footer-item">
+                                            Social </div>
+                                    </div>
+                                    <p>
+                                    <div class="footer-social">
+                                        <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                                    </div>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="footer-widget d-flex justify-content-around">
+                            <ul class="footer-menu">
+                                <h5>Customer Service</h5>
+                                <li><a href="need-help.html">Need Help?</a></li>
+                                <li><a href="order-tracking.html">Order Tracking</a></li>
+                                <li><a href="request-callback.html">Request Callback</a></li>
+                                <li><a href="https://m.me/holago.com.bd" target="_blank">Live Chat</a></li>
+                            </ul>
+                            <ul class="footer-menu">
+                                <h5>Information</h5>
+                                <li><a href="about.html">About HOLAGO</a></li>
+                                <li><a href="location.html">Store Locator</a></li>
+                                <li><a href="club.html">HOLAGO Club</a></li>
+                                <li><a href="refund.html">Refund and Returns</a></li>
+                                <li><a href="tou.html">Terms of Use</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="footer-widget">
+                            <div class="footer-menu">
+                                <h5>Join Our Newsletter</h5>
+                                <p>Subscribe to our newsletter and get regular fashion updates.</p>
+                                <form action="" method="post">
+                                    <div class="form-group d-flex align-items-center position-relative">
+                                        <input type="email" name="email" class="form-control"
+                                            placeholder="Type your email">
+                                        <button type="submit"><i class="fa fa-arrow-right-long"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-area bg-black pt-2 pb-2">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                        <span class="text-white">Copyright &copy; 2023 HOLAGO. All rights reserved. Developed by <a
+                                target="_blank" class="text-white text-decoration-underline"
+                                href="https://classicit.com.bd/">Classic IT</a></span>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                        <span>
+                            <img class="w-100" src="img/ssl-commerz.webp" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- bottom footer fixed start -->
+    <div class="bottom-footer-fixed d-flex align-content-center justify-content-around d-none">
+        <a href="index.html" class="single-footer-menu">
+            <i class="fa fa-home"></i>
+        </a>
+        <a href="#" class="single-footer-menu">
+            <i class="fa fa-user"></i>
+        </a>
+        <a href="#" class="single-footer-menu">
+            <div data-bs-toggle="offcanvas" href="#cardModal" role="button" aria-controls="offcanvasExample">
+                <i class="fa fa-shopping-cart"></i>
+                <span>10</span>
+            </div>
+        </a>
+        <a href="wishlist.html" class="single-footer-menu">
+            <i class="fa fa-heart"></i>
+            <span>10</span>
+        </a>
+    </div>
+    <!-- bottom footer fixed end -->
+
+    <!-- cart offcanvas menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cardModal" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">YOUR CART</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="single-cart-item">
+                <div class="single-cart-product d-flex">
+                    <div class="sigle-cart-product-photo">
+                        <a href="#">
+                            <img src="img/siam.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="sigle-cart-product-content">
+                        <div class="cart-product-name d-flex justify-content-between">
+                            <div>
+                                <a href="#">Holago Discreet Delight Polo - S</a>
+                                <h6>HOLAGO CLUB POINTS: 1334</h6>
+                                <h6>HOLAGO CLUB POINTS: <br> 1334 ( 1334 * 1 )</h6>
+                            </div>
+                            <span><i class="fa fa-xmark"></i></span>
+                        </div>
+                        <div class="cart-product-quantity d-flex justify-content-between align-items-center">
+                            <div class="product_quantity">
+                                <a href="#" class="quantity__minus"><span><i class="fa fa-minus"></i></span></a>
+                                <input name="quantity" type="text" class="quantity__input" value="1" disabled>
+                                <a href="#" class="quantity__plus"><span><i class="fa fa-plus"></i></span></a>
+                            </div>
+                            <div>10000.00</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="single-cart-item">
+                <div class="single-cart-product d-flex">
+                    <div class="sigle-cart-product-photo">
+                        <a href="#">
+                            <img src="img/latest/1-back.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="sigle-cart-product-content">
+                        <div class="cart-product-name d-flex justify-content-between">
+                            <div>
+                                <a href="#">Holago Discreet Delight Polo - S</a>
+                                <h6>HOLAGO CLUB POINTS: 1334</h6>
+                                <h6>HOLAGO CLUB POINTS: <br> 1334 ( 1334 * 1 )</h6>
+                            </div>
+                            <span><i class="fa fa-xmark"></i></span>
+                        </div>
+                        <div class="cart-product-quantity d-flex justify-content-between align-items-center">
+                            <div class="product_quantity">
+                                <a href="#" class="quantity__minus"><span><i class="fa fa-minus"></i></span></a>
+                                <input name="quantity" type="text" class="quantity__input" value="1" disabled>
+                                <a href="#" class="quantity__plus"><span><i class="fa fa-plus"></i></span></a>
+                            </div>
+                            <div>10000.00</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="single-cart-item">
+                <div class="single-cart-product d-flex">
+                    <div class="sigle-cart-product-photo">
+                        <a href="#">
+                            <img src="img/latest/2-back.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="sigle-cart-product-content">
+                        <div class="cart-product-name d-flex justify-content-between">
+                            <div>
+                                <a href="#">Holago Discreet Delight Polo - S</a>
+                                <h6>HOLAGO CLUB POINTS: 1334</h6>
+                                <h6>HOLAGO CLUB POINTS: <br> 1334 ( 1334 * 1 )</h6>
+                            </div>
+                            <span><i class="fa fa-xmark"></i></span>
+                        </div>
+                        <div class="cart-product-quantity d-flex justify-content-between align-items-center">
+                            <div class="product_quantity">
+                                <a href="#" class="quantity__minus"><span><i class="fa fa-minus"></i></span></a>
+                                <input name="quantity" type="text" class="quantity__input" value="1" disabled>
+                                <a href="#" class="quantity__plus"><span><i class="fa fa-plus"></i></span></a>
+                            </div>
+                            <div>10000.00</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="single-cart-item">
+                <div class="single-cart-product d-flex">
+                    <div class="sigle-cart-product-photo">
+                        <a href="#">
+                            <img src="img/latest/4-front.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="sigle-cart-product-content">
+                        <div class="cart-product-name d-flex justify-content-between">
+                            <div>
+                                <a href="#">Holago Discreet Delight Polo - S</a>
+                                <h6>HOLAGO CLUB POINTS: 1334</h6>
+                                <h6>HOLAGO CLUB POINTS: <br> 1334 ( 1334 * 1 )</h6>
+                            </div>
+                            <span><i class="fa fa-xmark"></i></span>
+                        </div>
+                        <div class="cart-product-quantity d-flex justify-content-between align-items-center">
+                            <div class="product_quantity">
+                                <a href="#" class="quantity__minus"><span><i class="fa fa-minus"></i></span></a>
+                                <input name="quantity" type="text" class="quantity__input" value="1" disabled>
+                                <a href="#" class="quantity__plus"><span><i class="fa fa-plus"></i></span></a>
+                            </div>
+                            <div>10000.00</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="single-cart-item">
+                <div class="single-cart-product d-flex">
+                    <div class="sigle-cart-product-photo">
+                        <a href="#">
+                            <img src="img/latest/3-front.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="sigle-cart-product-content">
+                        <div class="cart-product-name d-flex justify-content-between">
+                            <div>
+                                <a href="#">Holago Discreet Delight Polo - S</a>
+                                <h6>HOLAGO CLUB POINTS: 1334</h6>
+                                <h6>HOLAGO CLUB POINTS: <br> 1334 ( 1334 * 1 )</h6>
+                            </div>
+                            <span><i class="fa fa-xmark"></i></span>
+                        </div>
+                        <div class="cart-product-quantity d-flex justify-content-between align-items-center">
+                            <div class="product_quantity">
+                                <a href="#" class="quantity__minus"><span><i class="fa fa-minus"></i></span></a>
+                                <input name="quantity" type="text" class="quantity__input" value="1" disabled>
+                                <a href="#" class="quantity__plus"><span><i class="fa fa-plus"></i></span></a>
+                            </div>
+                            <div>10000.00</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="single-cart-item">
+                <div class="single-cart-product d-flex">
+                    <div class="sigle-cart-product-photo">
+                        <a href="#">
+                            <img src="img/siam.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="sigle-cart-product-content">
+                        <div class="cart-product-name d-flex justify-content-between">
+                            <div>
+                                <a href="#">Holago Discreet Delight Polo - S</a>
+                                <h6>HOLAGO CLUB POINTS: 1334</h6>
+                                <h6>HOLAGO CLUB POINTS: <br> 1334 ( 1334 * 1 )</h6>
+                            </div>
+                            <span><i class="fa fa-xmark"></i></span>
+                        </div>
+                        <div class="cart-product-quantity d-flex justify-content-between align-items-center">
+                            <div class="product_quantity">
+                                <a href="#" class="quantity__minus"><span><i class="fa fa-minus"></i></span></a>
+                                <input name="quantity" type="text" class="quantity__input" value="1" disabled>
+                                <a href="#" class="quantity__plus"><span><i class="fa fa-plus"></i></span></a>
+                            </div>
+                            <div>10000.00</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-footer p-3 cartModalFooter">
+            <div class="footer-item d-flex align-items-center justify-content-between">
+                <h4 class="offcanvas-title" id="offcanvasExampleLabel"><strong>Subtotal : </strong></h4>
+                <span>৳6,395.00
+                </span>
+            </div>
+            <div class="footer-item pt-3">
+                <a href="cart.html" class="cartBtn cartBtn-top mb-2">VIEW CART</a>
+                <a href="checkout.html" class="cartBtn cartBtn-bottom">CHECKOUT</a>
+            </div>
+        </div>
+    </div>
+    <!-- cart offcanvas menu -->
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
