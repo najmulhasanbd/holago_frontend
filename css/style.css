@@ -1357,12 +1357,12 @@ a {
 
 /* refresh start */
 .refresh-content {
-  background-image: url(../img/refresh-bg.webp);
+  background-image: url(../img/refresh-bg.jpg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 40% auto;
   background-color: #2c2c2c0d;
-  padding: 100px;
+  padding: 35px;
   display: flex;
   flex-direction: column;
   text-align: end;
