@@ -4604,3 +4604,6 @@ body.hidden-scrolling {
 	background-image: none;
 	border: 1px solid #ddd;
 }
+input:focus, textarea:focus {
+  border: 1px solid #ddd;
+}
